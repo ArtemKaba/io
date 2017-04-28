@@ -58,8 +58,8 @@ def conn (device,command,queue,template=None):
     except pexpect.TIMEOUT:
         queue.put(None)
 
-def do_proccesses (function,items,command,template=None):
-    """ Func for use multiproces """
+def do_processes (function,items,command,template=None):
+    """ Func for use multiprocessing """
     results = []
     processes = []
     queue = multiprocessing.Queue()
@@ -82,7 +82,7 @@ def do_proccesses (function,items,command,template=None):
 # if not, change it below
 with open(output, "w") as v:
     v.write(
-        yaml.dump(do_proccesses(
+        yaml.dump(do_processes(
             conn,
             dic['switches'],
             command,
