@@ -1,0 +1,6 @@
+Value Required VLAN (\d+)
+Value Ports ((e|g)\S+)
+
+Start
+  ^interface(\srange|)\sethernet\s${Ports}
+  ^switchport\saccess\svlan\s${VLAN} -> Record

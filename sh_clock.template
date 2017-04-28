@@ -1,0 +1,9 @@
+Value Time (..:..:..)
+Value TimeZoneName (\S+|)
+Value Timezone (UTC.\d+)
+Value Month (\w+)
+Value MonthDay (\d+)
+Value Year (\d+)
+
+Start
+  ^(\s+|)${Time}\s+${TimeZoneName}\(${Timezone}\)\s+${Month}\s+${MonthDay}\s+${Year} -> Record

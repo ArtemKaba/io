@@ -1,0 +1,6 @@
+Value ID (\d+)
+Value Name (\S+)
+Value Ports ((e|g)\S+|)
+
+Start
+  ^(\s|)${ID}\s+${Name}\s+${Ports} -> Record
