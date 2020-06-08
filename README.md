@@ -1,2 +1,2 @@
 # io
-Manage network devices by python scripts
+Use python scripts to manage network devices
